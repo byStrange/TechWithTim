@@ -1,9 +1,12 @@
-{% extends 'core/home_wrapper.html' %} {% block content %}
-{% load static %}
+{% extends 'core/home_wrapper.html' %} {% block content %} {% load static %}
 <!-- main -->
 <main>
   <div data-background-title="english" class="container center top">
-    <div style="position: relative; z-index: 4" class="context justify-content" _-scope-_="P_DXLlg-pK">
+    <div
+      style="position: relative; z-index: 4"
+      class="context justify-content"
+      _-scope-_="P_DXLlg-pK"
+    >
       <div>
         <div style="margin-bottom: 30px; padding: 0px 20px" class="text">
           <button class="btn sm">
@@ -14,12 +17,18 @@
         </div>
         <div class="text big">
           <span>
-            <span class="marked">6+ IELTS или получите свои деньги обратно</span>
+            <span class="marked"
+              >6+ IELTS или получите свои деньги обратно</span
+            >
             Получите IELTS и поступите в топ лучших университетов
           </span>
         </div>
       </div>
-      <div style="justify-content: center; margin-top: 50px" class="display" _-scope-_="GTyrlRoEbm">
+      <div
+        style="justify-content: center; margin-top: 50px"
+        class="display"
+        _-scope-_="GTyrlRoEbm"
+      >
         <a href="#courses">
           <button class="default btn">
             <span> Записаться на курс </span>
@@ -29,11 +38,22 @@
       </div>
     </div>
   </div>
-  <div style="bottom: -10px; left: 0px; z-index: 1" class="absolute img" _-scope-_="WnyRtRLqqw">
-    <img src="{% static 'assets/media/images/header_bottom.jpg' %}" style="width: 250px" />
+  <div
+    style="bottom: -10px; left: 0px; z-index: 1"
+    class="absolute img"
+    _-scope-_="WnyRtRLqqw"
+  >
+    <img
+      src="{% static 'assets/media/images/header_bottom.jpg' %}"
+      style="width: 250px"
+    />
   </div>
   <div style="position: relative">
-    <div style="bottom: 0px; right: 0px" class="absolute img left" _-scope-_="caqPFkckDO">
+    <div
+      style="bottom: 0px; right: 0px"
+      class="absolute img left"
+      _-scope-_="caqPFkckDO"
+    >
       <img src="{% static 'assets/media/images/main.jpg' %}" id="mainImg" />
       <style>
         @media screen and (min-width: 767px) {
@@ -44,29 +64,62 @@
       </style>
     </div>
   </div>
-  <div style="left: 55%; top: 50%" class="absolute img messages left" _-scope-_="yKJxXlBxau">
+  <div
+    style="left: 55%; top: 50%"
+    class="absolute img messages left"
+    _-scope-_="yKJxXlBxau"
+  >
     <div style="position: relative">
-      <div c="" style="left: -130px; top: -130px" class="message left top" _-scope-_="IXwuWKjxbt">
+      <div
+        c=""
+        style="left: -130px; top: -130px"
+        class="message left top"
+        _-scope-_="IXwuWKjxbt"
+      >
         <div class="img">
-          <img src="{% static 'assets/media/images/little_images/image-7.png' %}" alt="" style="width: 50px" />
+          <img
+            src="{% static 'assets/media/images/little_images/image-7.png' %}"
+            alt=""
+            style="width: 50px"
+          />
         </div>
         <p>Hello, my friend! <span>🤗</span></p>
       </div>
-      <div style="left: 250px; top: -250px" class="message left top" _-scope-_="mD_sXLJlYq">
+      <div
+        style="left: 250px; top: -250px"
+        class="message left top"
+        _-scope-_="mD_sXLJlYq"
+      >
         <div class="img">
-          <img src="{% static 'assets/media/images/little_images/image-3.png' %}" alt="" style="width: 50px" />
+          <img
+            src="{% static 'assets/media/images/little_images/image-3.png' %}"
+            alt=""
+            style="width: 50px"
+          />
         </div>
         <p>What are you doing ?<span></span></p>
       </div>
-      <div style="left: 350px; top: -100px" class="message left top" _-scope-_="UdPWaRitrM">
+      <div
+        style="left: 350px; top: -100px"
+        class="message left top"
+        _-scope-_="UdPWaRitrM"
+      >
         <div class="img">
-          <img src="{% static 'assets/media/images/little_images/image-4.png' %}" alt="" style="width: 50px" />
+          <img
+            src="{% static 'assets/media/images/little_images/image-4.png' %}"
+            alt=""
+            style="width: 50px"
+          />
         </div>
         <p>Thank you !<span>😻</span></p>
       </div>
       <div class="message left top display" _-scope-_="NXIWDZyjhR">
         <div class="img">
-          <img src="{% static 'assets/media/images/little_images/image-7.png' %}" alt="" style="width: 50px" />
+          <img
+            src="{% static 'assets/media/images/little_images/image-7.png' %}"
+            alt=""
+            style="width: 50px"
+          />
         </div>
         <p>Hey, how are you ? <span></span></p>
       </div>
@@ -75,10 +128,21 @@
 </main>
 <!-- /main -->
 <div class="modal-container" style="display: none">
-  <div style="display: flex; flex-direction: column; overflow: auto" class="modal width" _-scope-_="SYfGtxCYZa">
-    <img src="{% static 'assets/images/course.png' %}" alt="" width="100%" height="300px" />
+  <div
+    style="display: flex; flex-direction: column; overflow: auto"
+    class="modal width"
+    _-scope-_="SYfGtxCYZa"
+  >
+    <img
+      src="{% static 'assets/images/course.png' %}"
+      alt=""
+      width="100%"
+      height="300px"
+    />
     <div class="content">
-      <b class="title"><span>IELTS - Гарантируем как минимум 6.5 - 7.0 band score</span></b>
+      <b class="title"
+        ><span>IELTS - Гарантируем как минимум 6.5 - 7.0 band score</span></b
+      >
       <div class="details">
         <p>
           IELTS (International English Language Testing System) - это способ
@@ -97,11 +161,18 @@
           <li>Имитация реалного IELTS EXAM (Mock Exam)</li>
         </ul>
       </div>
-      <p class="dur" style="margin-top: 10px; font-weight: bold"><span class="marked">Time</span>: 1 час 20 минут --- 3
-        раза неделю</p>
-      <p class="type" style="margin-top: 5px; font-weight: bold;"><span class="marked"></span>: индивмдуально или
-        групповое занятие</p>
-      <b>Contact: <a href="tel:{{ settings.phone1 }}" class="link">:{{ setting.phone1 }}</a></b>
+      <p class="dur" style="margin-top: 10px; font-weight: bold">
+        <span class="marked">Time</span>: 1 час 20 минут --- 3 раза неделю
+      </p>
+      <p class="type" style="margin-top: 5px; font-weight: bold">
+        <span class="marked"></span>: индивмдуально или групповое занятие
+      </p>
+      <b
+        >Contact:
+        <a href="tel:{{ settings.phone1 }}" class="link"
+          >:{{ setting.phone1 }}</a
+        ></b
+      >
       <center style="margin-top: 25px">
         <button class="btn default" id="closemodal">
           <span>Закрыть</span>
@@ -127,51 +198,86 @@
       <div class="card">
         <div class="icon">
           <span>
-            <img src="{% static 'assets/media/images/icons/darts.png' %}" alt="darts" />
+            <img
+              src="{% static 'assets/media/images/icons/darts.png' %}"
+              alt="darts"
+            />
           </span>
         </div>
-        <span><span class="marked">Качество</span> - эффективные методы с гарантией результата</span>
+        <span
+          ><span class="marked">Качество</span> - эффективные методы с гарантией
+          результата</span
+        >
       </div>
       <div class="card">
         <div style="padding-top: 6px" class="icon">
           <span>
-            <img src="{% static 'assets/media/images/icons/play-button.png' %}" alt="play-button" />
+            <img
+              src="{% static 'assets/media/images/icons/play-button.png' %}"
+              alt="play-button"
+            />
           </span>
         </div>
-        <span><span class="marked">Опыт специалистов </span> - преподавание английского языка с 2010 года</span>
+        <span
+          ><span class="marked">Опыт специалистов </span> - преподавание
+          английского языка с 2010 года</span
+        >
       </div>
       <div class="card">
         <div style="padding-top: 10px" class="icon">
           <span>
-            <img src="{% static 'assets/media/images/icons/mortarboard.png' %}" alt="mortarboard" />
+            <img
+              src="{% static 'assets/media/images/icons/mortarboard.png' %}"
+              alt="mortarboard"
+            />
           </span>
         </div>
-        <span><span class="marked">Персональный подход </span> - небольшие классы и индивидуальный подход</span>
+        <span
+          ><span class="marked">Персональный подход </span> - небольшие классы и
+          индивидуальный подход</span
+        >
       </div>
       <div class="card">
         <div class="icon">
           <span>
-            <img src="{% static 'assets/media/images/icons/learning.png' %}" alt="learning" />
+            <img
+              src="{% static 'assets/media/images/icons/learning.png' %}"
+              alt="learning"
+            />
           </span>
         </div>
-        <span><span class="marked">Проверенные услуги </span> - огромное количество довольных студентов (в том числе
-          преподавателей)</span>
+        <span
+          ><span class="marked">Проверенные услуги </span> - огромное количество
+          довольных студентов (в том числе преподавателей)</span
+        >
       </div>
       <div class="card">
         <div class="icon">
           <span>
-            <img src="{% static 'assets/media/images/icons/startup.png' %}" alt="startup" />
+            <img
+              src="{% static 'assets/media/images/icons/startup.png' %}"
+              alt="startup"
+            />
           </span>
         </div>
-        <span><span class="marked">Устная речь </span> - начните говорить сразу с первого урока</span>
+        <span
+          ><span class="marked">Устная речь </span> - начните говорить сразу с
+          первого урока</span
+        >
       </div>
       <div class="card">
         <div class="icon">
           <span>
-            <img src="{% static 'assets/media/images/icons/diagram.png' %}" alt="diagram" />
+            <img
+              src="{% static 'assets/media/images/icons/diagram.png' %}"
+              alt="diagram"
+            />
           </span>
         </div>
-        <span><span class="marked">Квалификация </span> - все учителя имеют сертификаты IELTS/CEFR</span>
+        <span
+          ><span class="marked">Квалификация </span> - все учителя имеют
+          сертификаты IELTS/CEFR</span
+        >
       </div>
     </div>
   </div>
@@ -190,28 +296,50 @@
         <span>Курсы</span>
       </div>
       <div>
-        <a href="#contact" class="btn default dark display" _-scope-_="eM-awpuCtA">
+        <a
+          href="#contact"
+          class="btn default dark display"
+          _-scope-_="eM-awpuCtA"
+        >
           <span>Хочу качество</span>
           <span class="fas fa-angle-right"></span>
         </a>
       </div>
     </div>
-    <div class="cards splide" id="splide1" style="width: 90%; margin: 0 auto; margin-top: 40px">
+    <div
+      class="cards splide"
+      id="splide1"
+      style="width: 90%; margin: 0 auto; margin-top: 40px"
+    >
       <div class="splide__track">
         <ul class="splide__list">
           {% for course in courses %}
           <li class="splide__slide">
             <div class="card">
               <div class="img top header">
-                <img src="{{ course.image.url }}" alt="course" width="300px" height="200px" />
+                <img
+                  src="{{ course.image.url }}"
+                  alt="course"
+                  width="300px"
+                  height="200px"
+                />
               </div>
               <div class="content">
                 <div class="_title">
                   <span>{{ course.course_name }}</span>
                 </div>
-                <div class="more" style="display: flex; justify-content: center;margin-top: 20px;">
-                  <button class="btn default"
-                    onclick="showModal(document.querySelector('.modal-container'),'{{ course.image.url }}',`{{course.course_name}}`, `{{ course.course_details }}`, `{{ course.courseType }}`, `{{course.duration}}`)">
+                <div
+                  class="more"
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+                  "
+                >
+                  <button
+                    class="btn default"
+                    onclick="showModal(document.querySelector('.modal-container'),'{{ course.image.url }}',`{{course.course_name}}`, `{{ course.course_details }}`, `{{ course.courseType }}`, `{{course.duration}}`)"
+                  >
                     <span>поробнее</span>
                     <span class="fas fa-angle-right"></span>
                   </button>
@@ -226,12 +354,14 @@
   </div>
 </section>
 
-<section style="padding: 0px 0px 100px " id="results">
+<section style="padding: 0px 0px 100px" id="results">
   <div data-background-title="results" class="container">
     <div style="margin-bottom: 50px">
       <button class="btn sm light">
-        <span><span class="marked">Results</span> of our
-          <span class="marked">students</span></span>
+        <span
+          ><span class="marked">Results</span> of our
+          <span class="marked">students</span></span
+        >
       </button>
       <div class="title">
         <span style="width: 500px">Результаты наших учеников</span>
@@ -243,7 +373,10 @@
             <li class="splide__slide">
               <div class="card item">
                 <div class="left-side">
-                  <img src="{% static 'assets/media/images/ielts/score-1.jpg' %}" alt="" />
+                  <img
+                    src="{% static 'assets/media/images/ielts/score-1.jpg' %}"
+                    alt=""
+                  />
                 </div>
                 <div class="score">
                   <p class="name">
@@ -262,7 +395,10 @@
             <li class="splide__slide">
               <div class="card item">
                 <div class="left-side">
-                  <img src="{% static 'assets/media/images/ielts/score-2.jpg' %}" alt="" />
+                  <img
+                    src="{% static 'assets/media/images/ielts/score-2.jpg' %}"
+                    alt=""
+                  />
                 </div>
                 <div class="score">
                   <p class="name">
@@ -281,7 +417,10 @@
             <li class="splide__slide">
               <div class="card item">
                 <div class="left-side">
-                  <img src="{% static 'assets/media/images/ielts/score-4.jpg' %}" alt="" />
+                  <img
+                    src="{% static 'assets/media/images/ielts/score-4.jpg' %}"
+                    alt=""
+                  />
                 </div>
                 <div class="score">
                   <p class="name">
@@ -300,7 +439,10 @@
             <li class="splide__slide">
               <div class="card item">
                 <div class="left-side">
-                  <img src="{% static 'assets/media/images/ielts/score-5.jpg' %}" alt="" />
+                  <img
+                    src="{% static 'assets/media/images/ielts/score-5.jpg' %}"
+                    alt=""
+                  />
                 </div>
                 <div class="score">
                   <p class="name">
@@ -319,7 +461,9 @@
             <li class="splide__slide">
               <div class="card item">
                 <div class="left-side">
-                  <img src="{% static 'assets/media/images/ielts/score-6.jpg' %}" />
+                  <img
+                    src="{% static 'assets/media/images/ielts/score-6.jpg' %}"
+                  />
                 </div>
                 <div class="score">
                   <p class="name">
@@ -338,7 +482,10 @@
             <li class="splide__slide">
               <div class="card item">
                 <div class="left-side">
-                  <img src="{% static 'assets/media/images/ielts/score-7.jpg' %}" alt="" />
+                  <img
+                    src="{% static 'assets/media/images/ielts/score-7.jpg' %}"
+                    alt=""
+                  />
                 </div>
                 <div class="score">
                   <p class="name">
@@ -357,7 +504,10 @@
             <li class="splide__slide">
               <div class="card item">
                 <div class="left-side">
-                  <img src="{% static 'assets/media/images/ielts/score-8.jpg' %}" alt="" />
+                  <img
+                    src="{% static 'assets/media/images/ielts/score-8.jpg' %}"
+                    alt=""
+                  />
                 </div>
                 <div class="score">
                   <p class="name">
@@ -400,7 +550,13 @@
         </a>
       </div>
     </div>
-    <div light style="width: 75%" class="cards splide" id="splide3" _-scope-_="EUyoeoYPij">
+    <div
+      light
+      style="width: 75%"
+      class="cards splide"
+      id="splide3"
+      _-scope-_="EUyoeoYPij"
+    >
       <div class="splide__track">
         <ul class="splide__list">
           {% for teacher in teachers|slice:":5" %}
@@ -422,7 +578,11 @@
         </ul>
       </div>
     </div>
-    <div style="display: none; margin-top: 50px" class="display" _-scope-_="_gGtUstK_t">
+    <div
+      style="display: none; margin-top: 50px"
+      class="display"
+      _-scope-_="_gGtUstK_t"
+    >
       <a href="{% url 'main:teachers' %}">
         <button class="btn default">
           <span>Хочу к ним</span>
@@ -440,7 +600,7 @@
         <span>What our <span class="marked">students</span> say</span>
       </button>
     </div>
-    <div style="display: flex;justify-content: space-between;">
+    <div style="display: flex; justify-content: space-between">
       <div class="title">
         <span style="width: 400px">Отзывы наших студентов</span>
       </div>
@@ -453,16 +613,43 @@
         </a>
       </div>
     </div>
-    <div class="pupils splide" id="splide4" style="margin-top: 100px;">
+    <div class="pupils splide" id="splide4" style="margin-top: 100px">
       <div class="splide__track">
         <ul class="splide__list">
           <div class="pupil-card splide__slide">
             <div class="top">
               <div class="img">
-                <img src="{% static 'assets/media/images/little_images/image-2.png' %}" alt="" />
+                <a href="{% static 'assets/media/images/students/student-6.jpg' %}"><img
+                  src="{% static 'assets/media/images/students/student-3.JPG' %}"
+                  alt=""
+                /></a>
               </div>
               <div>
-                <p>Chriss Moore</p>
+                <p>Humoyun</p>
+                <span class="marked">Student</span>
+              </div>
+            </div>
+            <div>
+              <p>
+                Во-первых, Ассаляму алейкум! Спасибо всем преданным сотрудникам
+                English with Tim! Не хватает словесной похвалы для описания
+                учебного центра и вашего персонала. Вот почему мы, студенты,
+                должны продемонстрировать свой потенциал на практике
+                результатами. Спасибо вам всем!
+              </p>
+            </div>
+          </div>
+          <div class="pupil-card splide__slide">
+            <div class="top">
+              <div class="img">
+                <a href="{% static 'assets/media/images/students/student-1.jpg' %}"><img
+                  src="{% static 'assets/media/images/students/student-1.JPG' %}"
+                  alt=""
+                /></a>
+                </a>
+              </div>
+              <div>
+                <p>Abror</p>
                 <span class="marked">Student</span>
               </div>
             </div>
@@ -479,100 +666,88 @@
           <div class="pupil-card splide__slide">
             <div class="top">
               <div class="img">
-                <img src="{% static 'assets/media/images/little_images/image-2.png' %}" alt="" />
+                <a href="{% static 'assets/media/images/students/student-4.jpg' %}"><img
+                  src="{% static 'assets/media/images/students/student-4.JPG' %}"
+                  alt=""
+                /></a>
               </div>
               <div>
-                <p>Chriss Moore</p>
+                <p>Davud</p>
                 <span class="marked">Student</span>
               </div>
             </div>
             <div>
               <p>
-                Знаете, English with Tim меня научил многому, почти 2 года я
-                обучаюсь здесь. Я начала с Beginner’а, но сейчас у меня
-                Foudation. Я хочу поблагодарить Toby и JK за их труды. Все
-                учителя энергичные и всегда есть взаимопонимание между учителем
-                и учеником. Да, мне очень повезло, что я учусь в этом центре.
+                Я полностью доволен. Мой разговорный Английский намного
+                улучшился и я бы определенно рекомендовал курсы в Tim Я считаю,
+                что этот центр и учителя одни из самых лучших. Все объясняется
+                понятным образом и атмосфера тоже очень крутая. Мне очень
+                понравился последний курс и я надеюсь, что последующие будут
+                также увлекательны и полезны.
               </p>
             </div>
           </div>
           <div class="pupil-card splide__slide">
             <div class="top">
               <div class="img">
-                <img src="{% static 'assets/media/images/little_images/image-2.png' %}" alt="" />
+                <a href="{% static 'assets/media/images/students/student-5.jpg' %}"><img
+                  src="{% static 'assets/media/images/students/student-5.JPG' %}"
+                  alt=""
+                /></a>
               </div>
               <div>
-                <p>Chriss Moore</p>
+                <p>Bekmuhammad</p>
                 <span class="marked">Student</span>
               </div>
             </div>
             <div>
               <p>
-                Знаете, English with Tim меня научил многому, почти 2 года я
-                обучаюсь здесь. Я начала с Beginner’а, но сейчас у меня
-                Foudation. Я хочу поблагодарить Toby и JK за их труды. Все
-                учителя энергичные и всегда есть взаимопонимание между учителем
-                и учеником. Да, мне очень повезло, что я учусь в этом центре.
+                Я думаю, что их методы эффективны и мне нравится то, как учителя
+                увлеченно помогают студентам. Все очень отзывчивые и уроки очень
+                полезны.
               </p>
             </div>
           </div>
           <div class="pupil-card splide__slide">
             <div class="top">
               <div class="img">
-                <img src="{% static 'assets/media/images/little_images/image-2.png' %}" alt="" />
+                <a href="{% static 'assets/media/images/students/student-2.jpg' %}"><img
+                  src="{% static 'assets/media/images/students/student-2.jpg' %}"
+                  alt=""
+                /></a>
               </div>
               <div>
-                <p>Chriss Moore</p>
+                <p>Хуршида</p>
                 <span class="marked">Student</span>
               </div>
             </div>
             <div>
               <p>
-                Знаете, English with Tim меня научил многому, почти 2 года я
-                обучаюсь здесь. Я начала с Beginner’а, но сейчас у меня
-                Foudation. Я хочу поблагодарить Toby и JK за их труды. Все
-                учителя энергичные и всегда есть взаимопонимание между учителем
-                и учеником. Да, мне очень повезло, что я учусь в этом центре.
+                Я хотел бы учиться здесь заново и я обязательно буду :) Все мои
+                одногруппники очень дружелюбны, атмосфера в заведении приятная.
+                Маленькие группы помогают лучше прогрессировать и я смело всем
+                рекомендую это место.
               </p>
             </div>
           </div>
           <div class="pupil-card splide__slide">
             <div class="top">
               <div class="img">
-                <img src="{% static 'assets/media/images/little_images/image-2.png' %}" alt="" />
+                <a href="{% static 'assets/media/images/students/student-6.jpg' %}"><img
+                  src="{% static 'assets/media/images/students/student-6.jpg' %}"
+                  alt=""
+                /></a>
               </div>
               <div>
-                <p>Chriss Moore</p>
+                <p>Abdulboriy</p>
                 <span class="marked">Student</span>
               </div>
             </div>
             <div>
               <p>
-                Знаете, English with Tim меня научил многому, почти 2 года я
-                обучаюсь здесь. Я начала с Beginner’а, но сейчас у меня
-                Foudation. Я хочу поблагодарить Toby и JK за их труды. Все
-                учителя энергичные и всегда есть взаимопонимание между учителем
-                и учеником. Да, мне очень повезло, что я учусь в этом центре.
-              </p>
-            </div>
-          </div>
-          <div class="pupil-card splide__slide">
-            <div class="top">
-              <div class="img">
-                <img src="{% static 'assets/media/images/little_images/image-2.png' %}" alt="" />
-              </div>
-              <div>
-                <p>Chriss Moore</p>
-                <span class="marked">Student</span>
-              </div>
-            </div>
-            <div>
-              <p>
-                Знаете, English with Tim меня научил многому, почти 2 года я
-                обучаюсь здесь. Я начала с Beginner’а, но сейчас у меня
-                Foudation. Я хочу поблагодарить Toby и JK за их труды. Все
-                учителя энергичные и всегда есть взаимопонимание между учителем
-                и учеником. Да, мне очень повезло, что я учусь в этом центре.
+                Маленькие группы, цена приемлемая, а самое главное все учителя
+                любят то, что делают: они подходят к работе с душой и заботятся
+                о нуждах студентов.
               </p>
             </div>
           </div>
@@ -594,13 +769,17 @@
         <span style="max-width: 700px">Часто задаваемые вопросы</span>
       </div>
     </div>
-    <div style="flex-wrap: wrap; margin-top: 50px" class="row flex-direction align-items" _-scope-_="_ZRcxskrpT">
+    <div
+      style="flex-wrap: wrap; margin-top: 50px"
+      class="row flex-direction align-items"
+      _-scope-_="_ZRcxskrpT"
+    >
       <div class="col">
         <ul>
           {% for faq in faq1 %}
           <li>
             <div>
-              <span class=" question">{{ faq.question }}</span>
+              <span class="question">{{ faq.question }}</span>
               <span class="collapse" button> </span>
             </div>
             <p class="hidden">{{ faq.answer }}</p>
@@ -624,12 +803,14 @@
     </div>
   </div>
 </section>
-<section id="gallery" style="background: #fff; padding-top: 40px;">
+<section id="gallery" style="background: #fff; padding-top: 40px">
   <div class="container">
     <button class="btn sm" style="background: #28314b; color: #fff">
       <span>Our <span class="marked">gallery</span></span>
     </button>
-    <div style="display: flex; justify-content: space-between; align-items: center;">
+    <div
+      style="display: flex; justify-content: space-between; align-items: center"
+    >
       <div class="title">
         <span>Наша фотографии</span>
       </div>
@@ -646,11 +827,14 @@
   <div class="grid container">
     <div class="grid-sizer"></div>
     {% for photo in photos|slice:3 %}
-    <div class="grid-item" style="background-image: url('{{ photo.photo.url }}')"></div>
+    <div
+      class="grid-item"
+      style="background-image: url('{{ photo.photo.url }}')"
+    ></div>
     {% endfor %}
   </div>
   <div class="grid-alpha"></div>
-  <div style="display: none; margin-top: 50px;" _-scope-_="D_4sWC_VVW">
+  <div style="display: none; margin-top: 50px" _-scope-_="D_4sWC_VVW">
     <a href="{% url 'main:gallery' %}">
       <button class="btn default">
         <span>Хочу к вам</span>
@@ -662,15 +846,24 @@
 
 <section style="background: rgb(255, 255, 255); padding-top: 40px" id="contact">
   <div style="position: relative" class="container">
-    <iframe height="900" id="gmap_canvas"
+    <iframe
+      height="900"
+      id="gmap_canvas"
       src="https://maps.google.com/maps?q=English%20With%20Tim&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
-      frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="
-        top: 106px;  
-      left: 50%;
+      frameborder="0"
+      scrolling="no"
+      marginheight="0"
+      marginwidth="0"
+      style="
+        top: 106px;
+        left: 50%;
         position: absolute;
         transform: translateX(-50%);
         width: 100%;
-      " class="display" _-scope-_="L_btWC_VVV"></iframe>
+      "
+      class="display"
+      _-scope-_="L_btWC_VVV"
+    ></iframe>
     <div style="position: relative; z-index: 2">
       <div>
         <button class="btn sm no-borders">
@@ -686,26 +879,35 @@
         <div style="position: relative; z-index: 2" class="col">
           <center style="margin-bottom: 80px; position: relative">
             <div style="left: -70px; top: -20px" class="absolute img">
-              <img src="{% static 'assets/media/logo/logo-bordered.png' %}" alt="logo" style="width: 100px" />
+              <img
+                src="{% static 'assets/media/logo/logo-bordered.png' %}"
+                alt="logo"
+                style="width: 100px"
+              />
             </div>
             <div class="title">
               <span>English with Tim</span>
             </div>
           </center>
           <p style="display: flex">
-            <span class="fas fa-location-dot"></span><span>{{ setting.address1 }}</span>
+            <span class="fas fa-location-dot"></span
+            ><span>{{ setting.address1 }}</span>
           </p>
           <p style="display: flex">
-            <span class="fas fa-location-dot"></span><span>{{ setting.address2 }}</span>
+            <span class="fas fa-location-dot"></span
+            ><span>{{ setting.address2 }}</span>
           </p>
           <p>
-            <span class="fas fa-phone"></span><a href="tel:{{ setting.phone1 }}">{{ setting.phone1 }}</a>
+            <span class="fas fa-phone"></span
+            ><a href="tel:{{ setting.phone1 }}">{{ setting.phone1 }}</a>
           </p>
           <p>
-            <span style="opacity: 0" class="fas fa-phone"></span><a href="tel:{{ setting.phone2 }}">{{ setting.phone2 }}</a>
+            <span style="opacity: 0" class="fas fa-phone"></span
+            ><a href="tel:{{ setting.phone2 }}">{{ setting.phone2 }}</a>
           </p>
           <p>
-            <span class="fas fa-envelope"></span><a href="mailto:{{ setting.email }}">{{ setting.email }}</a>
+            <span class="fas fa-envelope"></span
+            ><a href="mailto:{{ setting.email }}">{{ setting.email }}</a>
           </p>
           <div style="display: flex; margin-top: 20px" class="icons">
             <!-- telegram -->
@@ -732,9 +934,20 @@
             </a>
             <!-- /tik tok -->
           </div>
-          <div style="right: -167.5%; top: 0px" class="absolute img display" _-scope-_="OQyoteuLLa">
+          <div
+            style="right: -167.5%; top: 0px"
+            class="absolute img display"
+            _-scope-_="OQyoteuLLa"
+          >
             <div id="hideform">
-              <span style="color: rgb(255, 255, 255);cursor: pointer;font-size: 20px;" class="fas"></span>
+              <span
+                style="
+                  color: rgb(255, 255, 255);
+                  cursor: pointer;
+                  font-size: 20px;
+                "
+                class="fas"
+              ></span>
             </div>
           </div>
         </div>
@@ -743,21 +956,63 @@
             <span>Напишите нам</span>
           </div>
           <form method="post" style="margin-top: 30px" id="form">
-            <input type="hidden" name="csrfmiddlewaretoken"
-              value="W5ax5qSzqPSujH2uuZZKmyej2DdqA0a7VNUdZJ2USBOzXanP0Rbo4WXcSfhhjPX3" />
+            <input
+              type="hidden"
+              name="csrfmiddlewaretoken"
+              value="W5ax5qSzqPSujH2uuZZKmyej2DdqA0a7VNUdZJ2USBOzXanP0Rbo4WXcSfhhjPX3"
+            />
             {% csrf_token %}
             <div>
-              <input type=" text" name="name" maxlength="255" required="" id="id_name" placeholder="Ваше имя" />
-              <input type="text" name="surname" maxlength="255" required="" id="id_surname" placeholder="Фамилия" />
+              <input
+                type=" text"
+                name="name"
+                maxlength="255"
+                required=""
+                id="id_name"
+                placeholder="Ваше имя"
+              />
+              <input
+                type="text"
+                name="surname"
+                maxlength="255"
+                required=""
+                id="id_surname"
+                placeholder="Фамилия"
+              />
             </div>
             <div>
-              <input type="text" name="phone" maxlength="255" required="" id="id_phone" class="class_phone"
-                placeholder="Номер телефона" />
-              <input type="text" name="theme" maxlength="255" required="" id="id_theme" placeholder="Тема" />
+              <input
+                type="text"
+                name="phone"
+                maxlength="255"
+                required=""
+                id="id_phone"
+                class="class_phone"
+                placeholder="Номер телефона"
+              />
+              <input
+                type="text"
+                name="phone2"
+                maxlength="255"
+                required=""
+                id="id_theme"
+                placeholder="Второй номер"
+              />
             </div>
-            <textarea name="message" cols="40" rows="6" required="" id="id_message" placeholder="Текст"></textarea>
+            <textarea
+              name="message"
+              cols="40"
+              rows="6"
+              required=""
+              id="id_message"
+              placeholder="Текст"
+            ></textarea>
             <div style="margin-top: 70px">
-              <button type="submit" style="display: flex; margin: 0px auto" class="btn default">
+              <button
+                type="submit"
+                style="display: flex; margin: 0px auto"
+                class="btn default"
+              >
                 <span>Отправить сообщениe</span>
                 <span class="fas fa-angle-right"></span>
               </button>

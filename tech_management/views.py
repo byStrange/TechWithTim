@@ -147,7 +147,8 @@ def search(request):
         'teachers': teacher,
         'faqs': faq,
         'photos': photo,
-        'key': key
+        'key': key,
+        'contacts': contact,
     }
     return render(request, 'tech_admin/search.html', context)
 

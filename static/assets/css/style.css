@@ -490,6 +490,8 @@ img {
 
 #about-us .pupil-card .img {
   margin-right: 20px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .share .icon {
@@ -1186,4 +1188,9 @@ textarea {
   .grid-item--width2 {
     width: 100%;
   }
+}
+
+#about-us .pupil-card .top img{
+  width: 50px;
+  height: 50px;
 }

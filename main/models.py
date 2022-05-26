@@ -75,7 +75,7 @@ class Contact(models.Model):
     name = models.CharField('Name', max_length=255)
     surname = models.CharField('Surname', max_length=255)
     phone = models.CharField('Phone', max_length=255)
-    theme = models.CharField('Theme', max_length=255)
+    phone2 = models.CharField('Phone2', max_length=255)
     message = models.TextField('Message')
     created_at = models.DateTimeField('Time', auto_now_add=True)
     is_pinned = models.BooleanField('Pin', default=False)

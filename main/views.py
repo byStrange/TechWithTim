@@ -45,8 +45,10 @@ def home(request):
         request.session['is_visitor'] = False
 
     if request.method == 'POST':
+        print(request.POST)
         form = ContactForm(request.POST)
         if form.is_valid():
+            print('form is valid')
             form.save()
             info.is_new = True
             info.registerated += 1
