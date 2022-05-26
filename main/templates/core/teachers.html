@@ -1,0 +1,72 @@
+{% extends "core/home_wrapper.html" %} {% block content %}
+
+
+<style>
+  .hidden a{
+    color: transparent;
+  }
+</style>
+<section id="teachers" class="dark">
+  <div .container display="block">
+    <button .btn.sm background="#28314B" color="#fff">
+      <span>Our <span .marked>teachers</span></span>
+    </button>
+    <div .title>
+      <span>Наши учителя</span>
+    </div>
+  </div>
+  <div class="cards splide"  id="splide3" style="margin-top: 20px; width: 100%" light>
+    <div class="splide__track">
+      <ul class="splide__list">
+        {% for teacher in teachers %}
+        <li class="splide__slide">
+          <div class="card">
+            <div class="img">
+              <img src="{{ teacher.image.url }}" alt="" />
+            </div>
+            <div class="content">
+              <p class="name">
+                <span>{{ teacher.teacher_name }}</span>
+                <span class="fas fa-caret-down"></span>
+              </p>
+              <p class="_hidden">{{ teacher.about }}</p>
+            </div>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  </div>
+</section>
+<script>
+  window.onload = function () {
+    var length = document.querySelectorAll('.card').length
+    var splide = new Splide('#splide3', {
+      padding: '5rem',
+      gap: '15px',
+      perMove: 1,
+      perPage: 1,
+      arrows: false,
+      autoplay: true,
+      focus: 'center',
+      breakpoints: {
+        767: {
+          perPage: 1,
+          padding: 0,
+          gap: 0,
+          autoWidth: false
+        },
+        1950: {
+          perPage: length <= 3 ? length : 4
+        },
+        1500: {
+          perPage: length <= 2 ? length : 2
+        },
+      }
+    });
+    splide.mount()
+  }
+</script>
+
+{% endblock %}

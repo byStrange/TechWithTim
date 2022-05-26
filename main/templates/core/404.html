@@ -1,0 +1,59 @@
+{% extends 'core/home_wrapper.html' %}
+{% block content %}
+<style>
+    .center {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        margin: 100px 0 200px 0;
+    }
+
+    .center::after{
+        content: '404';
+        font-size: 20rem;
+        color: rgba(0,0,0,0.25);
+        position: absolute;
+        top: 10px;
+        z-index: -1;
+        text-shadow: 2px 2px 100px rgba(0,0,0,0.1);
+        animation: animate 700ms 2s linear; 
+    }
+
+    .center h1 {
+        font-size: 110px;
+    }
+    a {
+        text-decoration: none;
+        color: #00b3ff;
+    }
+    .center p {
+        font-size: 20px;
+    }
+    @keyframes animate {
+        0% { 
+            opacity: 1
+        }
+        25% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        75% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
+    <div class="center">
+        <h1>404</h1>
+        <p>Страница не найдена</p>
+        <p>вернуться на <a href="/">главную</a> страницу</p>
+    </div>
+{% endblock %}
