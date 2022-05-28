@@ -22,14 +22,14 @@ function checkSize() {
     $('header .nav-links').slideDown(100);
   }
   if (window.innerWidth < 768) {
-    $('#mainImg').attr('src', 'static/assets/images/main-mobile.jpg')
+    $('#mainImg').attr('src', 'tim/static/assets/images/main-mobile.jpg')
       .attr('alt', 'main-mobile')
       .css({
         width: "auto !important",
         height: "auto"
       }).parent().attr('_-scope-_', '')
   } else {
-    $('#mainImg').attr('src', 'static/assets/media/images/main.jpg');
+    $('#mainImg').attr('src', 'tim/static/assets/media/images/main.jpg');
   }
 }
 checkSize()
@@ -70,10 +70,10 @@ $(function () {
     }
   }
   $("#closemodal").click(e => {
-    $('.modal-container .modal').hide(1000);
+    $('.modal-container .modal').hide(500);
     setTimeout(() => {
       $('.modal-container').hide();
-    }, 900)
+    }, 200)
   })
 })
 
