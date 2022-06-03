@@ -1,25 +1,12 @@
 from statistics import mode
 from django.db import models
-from django_resized import ResizedImageField
 import uuid
-
-
-# Home Page Informations for Admin Panel
-class Information(models.Model):
-    visitors = models.IntegerField('Visitors', default=0)
-    visits = models.IntegerField('Visits', default=0)
-    registerated = models.IntegerField('Registerated', default=0)
-    is_new = models.BooleanField('Is New', default=False)
-
-    def __str__(self):
-        return f"Visitors: {self.visitors}, Visits: {self.visits}, Registerated: {self.registerated}"
 
 
 # Course
 class Course(models.Model):
     course_name = models.CharField('Course name', max_length=255)
-    about = models.TextField('About')
-    course_details = models.TextField('Details', default="0")
+    course_details = models.TextField('Details')
     duration = models.CharField('Course Duration', default="1", max_length=255)
     courseType = models.CharField('CourseType', default="0", max_length=255)
     image = models.ImageField('Choose image main (format: jpg, jpeg, png)', upload_to='img/%y/%m/%d/')
@@ -35,9 +22,6 @@ class Course(models.Model):
 class Teacher(models.Model):
     teacher_name = models.CharField('Teacher name', max_length=255)
     about = models.TextField('About')
-    # facebook = models.CharField('@Facebook', max_length=255)
-    # instagram = models.CharField('@Instagram', max_length=255)
-    # twitter = models.CharField('@Twitter', max_length=255)
     image = models.ImageField('Choose image main (format: jpg, jpeg, png)', upload_to='img/%y/%m/%d/')
 
     def __str__(self):
@@ -75,7 +59,7 @@ class Contact(models.Model):
     name = models.CharField('Name', max_length=255)
     surname = models.CharField('Surname', max_length=255)
     phone = models.CharField('Phone', max_length=255)
-    phone2 = models.CharField('Phone2', max_length=255)
+    phone2 = models.CharField('Phone2', max_length=255, blank=True)
     message = models.TextField('Message')
     created_at = models.DateTimeField('Time', auto_now_add=True)
     is_pinned = models.BooleanField('Pin', default=False)

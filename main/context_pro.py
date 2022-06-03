@@ -1,8 +1,8 @@
-from .models import Settings, Course
+from .models import Settings
 
 def view_all(request):
     context = {
-        "setting":Settings.objects.first(),
-        "courses":Course.objects.all()
+        "setting": Settings.objects.first()
     }
+
     return context

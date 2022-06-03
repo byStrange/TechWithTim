@@ -1,0 +1,323 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- default meta tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- /default meta tags -->
+
+  <!-- font awesome css -->
+  <link rel="stylesheet" href="{% static  'assets/fonts/fontawesome/css/all.min.css' %}" />
+  <!-- /font awesome css  -->
+  <link rel="stylesheet" href="{% static 'assets/css/splide.min.css' %}" />
+  <!-- main css -->
+  <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
+  <!-- /main css -->
+
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="{% static 'assets/media/logo/favicon/favicon.png' %}" type="image/x-icon" />
+  <!-- /favicon -->
+  <style scoped="">
+    @media screen and (max-width:991px) {
+      [_-scope-_=WnyRtRLqqw] {
+        display: none !important
+      }
+    }
+
+    @media screen and (max-width:767px) {
+      [_-scope-_=P_DXLlg-pK] {
+        justify-content: space-between !important
+      }
+
+      [_-scope-_=GTyrlRoEbm] {
+        display: flex !important
+      }
+
+      [_-scope-_=caqPFkckDO] {
+        left: -700px !important
+      }
+
+      [_-scope-_=yKJxXlBxau] {
+        left: 0 !important
+      }
+
+      [_-scope-_=IXwuWKjxbt] {
+        left: 5px !important;
+        top: -70px
+      }
+
+      [_-scope-_=mD_sXLJlYq] {
+        left: 150px !important;
+        top: 73px !important
+      }
+
+      [_-scope-_=UdPWaRitrM] {
+        left: 5px !important;
+        top: 71px !important
+      }
+
+      [_-scope-_=NXIWDZyjhR] {
+        left: 150px !important;
+        top: 90px !important;
+        display: none !important
+      }
+
+      [_-scope-_=SYfGtxCYZa] {
+        width: 100% !important
+      }
+
+      [_-scope-_=eM-awpuCtA] {
+        display: none !important
+      }
+
+      [_-scope-_=gfKOAHDGco] {
+        flex-direction: column !important
+      }
+
+      [_-scope-_=Bxnzbc_tgK] {
+        display: none !important
+      }
+
+      [_-scope-_=EUyoeoYPij] {
+        width: 100% !important
+      }
+
+      [_-scope-_="_gGtUstK_t"] {
+        display: flex !important;
+        justify-content: center;
+      }
+
+      [_-scope-_="_ZRcxskrpT"] {
+        flex-direction: column !important;
+        align-items: center !important
+      }
+
+      [_-scope-_=vrYLKtWMJr] {
+        display: none !important
+      }
+
+      [_-scope-_=acFo-wXLiU] {
+        display: flex !important
+      }
+
+      [_-scope-_=L_btWC_VVV] {
+        display: none !important
+      }
+
+      [_-scope-_=lTMQ_OCmJJ] {
+        width: 100% !important
+      }
+
+      [_-scope-_=tMzOiau-iC] {
+        flex-direction: column !important
+      }
+
+      [_-scope-_=OQyoteuLLa] {
+        display: none !important
+      }
+
+      [_-scope-_=D_4sWC_VVW] {
+        display: flex !important
+      }
+    }
+  </style>
+  <style>
+    .card a {
+      color: transparent
+    }
+
+    .icons a {
+      color: #fff;
+      text-decoration: none
+    }
+
+    .icons a:not(:last-child) {
+      margin-right: 10px
+    }
+
+    .licence {
+      margin-top: 20px
+    }
+
+    .licence li {
+      margin: 0 15px
+    }
+
+    @media screen and (max-width:767px) {
+      .licence {
+        flex-wrap: wrap
+      }
+    }
+  </style>
+  <title>English with Tim</title>
+</head>
+
+<body class="page">
+  <!-- header -->
+  <header>
+    <div class="nav container">
+      <div class="img logo" style="margin-top: 5px">
+        <a href="/">
+          <img src="{% static 'assets/media/logo/logo-light.png' %}" alt="English with Tim" style="width: 70px" />
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/">Основной</a></li>
+        <li><a href="/#courses">Курсы</a></li>
+        <li><a href="/#results">Результаты</a></li>
+        <li><a href="/#teachers">Команда</a></li>
+        <li><a href="/#about-us">Отзывы</a></li>
+        <li><a href="/#gallery">Галерея</a></li>
+        <li><a href="/#contact">Контакты</a></li>
+        <div id="move"></div>
+      </ul>
+      <div class="burger" style="display: none;">
+        <span class="fas fa-bars" style="color: #fff;"></span>
+      </div>
+    </div>
+  </header>
+  <!-- /header -->
+
+  {% block content %} {% endblock %}
+
+  <!-- footer -->
+  <footer marginTop="100px">
+    <div class="footer-img" style="transform: translateY(11px)">
+      <img src="{% static 'assets/media/images/footer.jpg' %}" style="width: 100%" />
+    </div>
+    <section id="footer" style="padding-bottom: 40px;">
+      <div class="container" style="border-bottom: 1px solid #fff; padding-bottom: 50px">
+        <div class="row" style="display: flex; justify-content: space-between">
+          <div class="col" style="width: 250px">
+            <div class="logo img">
+              <img src="{% static 'assets/media/logo/logo-light.png' %}" style="width: 70px" alt="" />
+            </div>
+            <p fontSize="18px" style="font-size: 18px">
+              Tim - Вместе, мы становимся лучше
+            </p>
+          </div>
+          <div class="col" style="
+                width: 350px;
+                display: flex;
+                justify-content: space-between;
+              ">
+            <ul style="margin-right: 50px">
+              <li class="_title"><span>Меню</span></li>
+              <li><a href="/">Основной</a></li>
+              <li><a href="/#about-us">О нас</a></li>
+              <li><a href="/#courses">Курсы</a></li>
+              <li><a href="/#teachers">Команда</a></li>
+              <li><a href="/#about-us">Отзывы</a></li>
+              <li><a href="/#results">Результаты</a></li>
+              <li><a href="/#gallery">Галерея</a></li>
+              <li><a href="/#contact">Контакты</a></li>
+            </ul>
+            <ul id="coursesLink">
+              <li class="_title">
+                <span>Все курсы</span>
+              </li>
+              {% for course in courses%}
+              <li>
+                <a>{{course.course_name}}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="col" style=" width: 400px;">
+            <p display="flex" style="display: flex">
+              <span class="fas fa-location-dot"></span><span>{{ setting.address1 }}</span>
+            </p>
+            <p display="flex" style="display: flex">
+              <span class="fas fa-location-dot"></span><span>{{ setting.address2 }}</span>
+            </p>
+            <p>
+              <span class="fas fa-phone"></span><a href="tel:{{ setting.phone1 }}">{{ setting.phone1 }}</a>
+            </p>
+            <p>
+              <span class="fas fa-phone" opacity="0"></span><a href="tel:{{ setting.phone2 }}">{{ setting.phone2 }}</a>
+            </p>
+            <p>
+              <span class="fas fa-envelope"></span><a href="mailto:{{ setting.email }}">{{ setting.email }}</a>
+            </p>
+            <div style="display: flex;" class="icons">
+              <a href="{{ setting.telegram }}">
+                <div class="icon">
+                  <span class="fa-brands fa-telegram"></span>
+                </div>
+              </a>
+              <a href="{{ setting.instagram }}">
+                <div class="icon">
+                  <span class="fa-brands fa-instagram"></span>
+                </div>
+              </a>
+              <a href="{{ setting.tiktok }}">
+                <div class="icon">
+                  <span class="fa-brands fa-tiktok"></span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex; align-items: center; flex-direction: column; margin-top: 35px">
+        <!-- LICENCE -->
+        <span>2022 <a href="mailto:{{ setting.email }}"
+            style="color: #fff;text-decoration: none">@EnglishwithTim</a></span>
+        <ul style="display: flex" class="licence">
+          <li><a href="{% static 'Публичная_оферта.pdf' %}" download="true">Публичная оферта</a></li>
+          <li><a href="{% static 'Форма_заявления_о_возврате_денежный_средств.pdf' %}" download="true">Форма заявления о возврате денежный средств</a></li>
+        </ul>
+        <!-- /LICENCE -->
+      </div>
+    </section>
+  </footer>
+  <!-- /footer -->
+
+  <!-- main scripts -->
+  <script src="{% static 'assets/js/splide.min.js' %}"></script>
+  <script src="{% static 'assets/js/jquery.js' %}"></script>
+  <!-- inputmask -->
+  <script src="{% static 'assets/js/input_mask.js' %}"></script>
+  <!-- /inputmask -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+  <script>
+
+    function checkSize() {
+      if (window.innerWidth < 1124) {
+        $('header .nav-links').slideUp(100);
+      } else {
+        $('header .nav-links').slideDown(100);
+      }
+      if (window.innerWidth < 768) {
+        $('#mainImg').attr('src', "{% static 'assets/images/main-mobile.jpg' %}")
+          .attr('alt', 'main-mobile')
+          .css({
+            width: "auto !important",
+            height: "auto"
+          }).parent().attr('_-scope-_', '')
+      } else {
+        $('#mainImg').attr('src', "{% static 'assets/media/images/main.jpg' %}");
+      }
+    }
+    checkSize()
+    $(window).on('resize', checkSize)
+    // Modal with transition
+    if (window.innerWidth > 767) {
+      $(window).on('scroll', function (e) {
+        if (window.scrollY > 3600 || window.scrollY < 2150) {
+          $('#teachers .card .name span.fas').each(function () {
+            $(this).parent().parent().children().eq(1).slideUp(200)
+            $(this).removeClass('rotate')
+          })
+        }
+      })
+    }
+  </script>
+  <!-- /main scripts -->
+</body>
+
+</html>
