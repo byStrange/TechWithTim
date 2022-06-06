@@ -145,7 +145,8 @@ var splide2 = new Splide('#splide3', {
       perPage: 1,
       padding: 0,
       gap: 0,
-      autoWidth: false
+      autoWidth: false,
+      arrows: false
     },
     1950: {
       perPage: len2 <= 3 ? len2 : 4,
