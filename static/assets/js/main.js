@@ -170,7 +170,8 @@ var splide3 = new Splide('#splide2', {
     767: {
       perPage: 1,
       padding: 0,
-      autoWidth: true
+      autoWidth: true,
+      arrows: false
     },
     1950: {
       perPage: len3 <= 3 ? len3 : 4,
