@@ -192,7 +192,7 @@ main .messages .message p {
   cursor: default;
 }
 
-.cards .card > span {
+.cards .card>span {
   display: inline-block;
   max-width: 400px;
   font-size: 30px;
@@ -254,12 +254,12 @@ main .messages .message p {
   cursor: default;
   overflow: hidden;
   cursor: pointer;
-  margin: 0 !important;
   background: #fff !important;
   border-radius: 15px;
   padding-bottom: 25px;
   transition: 250ms;
   min-height: 330px;
+  margin-right: 20px;
 }
 
 img {
@@ -320,9 +320,8 @@ img {
   background: #fff;
   padding: 10px;
   border-radius: 10px;
-  max-width: 700px;
-  height: 100%; /* delete this line */
   align-items: center;
+  margin-right: 20px;
 }
 
 #results .cards .card img {
@@ -396,7 +395,7 @@ img {
   color: #fff !important;
 }
 
-#teachers > .container {
+#teachers>.container {
   display: flex;
   align-items: center;
 }
@@ -444,6 +443,7 @@ img {
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
 }
 
 #teachers .cards :not(.name) {
@@ -480,16 +480,11 @@ img {
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  height: 100%;
+  height: auto;
+  margin-right: 10px;
 }
 
-#about-us .splide__track {
-  overflow: visible;
-}
 
-#about-us .pupils .pupil-card:not(.is-active, .is-prev, .is-next) {
-  opacity: 0.4;
-}
 
 #about-us .pupil-card .top {
   display: flex;
@@ -581,7 +576,7 @@ img {
   border-radius: 0px 0px 5px 0px;
 }
 
-#faq li > div {
+#faq li>div {
   display: flex;
   justify-content: space-between;
 }
@@ -623,42 +618,6 @@ img {
   content: "-";
 }
 
-#gallery {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#gallery .col:hover img {
-  transform: scale(1.2);
-}
-
-.gallery .row {
-  display: flex;
-  overflow: visible;
-  margin: 50px auto;
-}
-
-.gallery .row .col {
-  height: 300px;
-  max-width: 520px;
-}
-
-.gallery .row .col .img {
-  width: 100%;
-  height: 100%;
-}
-
-.gallery .row .col {
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-
-.gallery .row .col img {
-  width: 100%;
-  height: 100%;
-}
-
 #contact {
   padding-bottom: 100px;
   background-color: #fff !important;
@@ -688,7 +647,7 @@ img {
   width: 100%;
 }
 
-#contact .absolute.img > div {
+#contact .absolute.img>div {
   width: 70px;
   height: 70px;
   background: var(--s-offer-content-background);
@@ -717,7 +676,7 @@ img {
   content: "\f0e0" !important;
 }
 
-#contact form > div {
+#contact form>div {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -825,9 +784,6 @@ textarea {
   margin-left: 10px;
 }
 
-#teachers .splide__arrow {
-  top: 170px;
-}
 
 @media screen and (max-width: 2000px) {
   .message[d] {
@@ -873,6 +829,7 @@ textarea {
   header .nav-links li {
     margin: 0 20px !important;
   }
+
   #teachers .cards.splide {
     width: 600px !important;
   }
@@ -929,21 +886,26 @@ textarea {
     display: none;
   }
 }
+
 @media screen and (max-width: 1300px) and (min-width: 768px) {
   #teachers .title span {
     width: 300px !important;
   }
+
   #teachers .container {
     justify-content: space-between !important;
   }
 }
+
 @media screen and (max-width: 991px) {
   #teachers .cards.splide {
     width: 500px !important;
   }
+
   #faq ul li span.question {
     font-size: 24px !important;
   }
+
   #footer .row {
     flex-direction: column;
   }
@@ -958,6 +920,15 @@ textarea {
 }
 
 @media screen and (max-width: 768px) {
+
+  .flickity-button {
+    display: none !important;
+  }
+
+  .pupil-card {
+    width: 100% !important;
+  }
+
   .message[c] {
     left: 0px !important;
     top: 40px !important;
@@ -976,6 +947,7 @@ textarea {
   .owl-item.active {
     display: flex;
   }
+
   #results .cards .card p:not(.name) {
     display: block !important;
     font-size: 18px !important;
@@ -988,9 +960,9 @@ textarea {
   #results .cards .card.item {
     max-width: 400px !important;
   }
+
   #results .cards .card.item {
     padding-right: 15px !important;
-    margin: 0 auto;
   }
 
   #results .cards .card p {
@@ -1002,7 +974,7 @@ textarea {
     margin-bottom: 0 !important;
   }
 
-  main > .container::after {
+  main>.container::after {
     top: 0 !important;
   }
 
@@ -1010,27 +982,18 @@ textarea {
     left: 0px !important;
   }
 
-  #gallery .gallery .line {
-    display: flex;
-  }
-
-  #contact form > div {
+  #contact form>div {
     flex-direction: column;
     margin-bottom: 0 !important;
   }
 
-  #contact form > div input {
+  #contact form>div input {
     width: 100%;
     margin-bottom: 7px;
   }
 
-  .cards .card > span {
+  .cards .card>span {
     max-width: 250px;
-  }
-
-  .gallery .row .col {
-    height: 140px !important;
-    max-width: 300px !important;
   }
 
   #results .cards .card img {
@@ -1053,19 +1016,21 @@ textarea {
     font-size: 20px;
     width: 100%;
   }
-  #teachers .cards.splide {
+
+  #teachers .cards {
     width: 100% !important;
     margin-top: 20px;
   }
+
   .container .title {
     font-size: 30px !important;
   }
 
-  .container .title > span {
+  .container .title>span {
     width: 100% !important;
   }
 
-  .cards .card > span {
+  .cards .card>span {
     font-size: 20px;
   }
 
@@ -1080,6 +1045,7 @@ textarea {
   #whywe .cards .card {
     margin-bottom: 40px !important;
   }
+
   #courses .cards .card {
     margin: 0 auto !important;
   }
@@ -1091,32 +1057,27 @@ textarea {
     margin: 0 auto;
     margin-bottom: 20px;
   }
+
   #results .score {
     margin-left: 0 !important;
     width: 100%;
   }
+
   #results .cards .card {
     max-height: none !important;
   }
+
   #teachers .card .name {
     padding-right: 20px;
   }
+
   #results .cards .card p:not(.name) {
     display: flex !important;
     justify-content: space-between;
   }
+
   #results .cards .card p:not(.name) .marked {
     margin-left: 0 !important;
-  }
-
-  .gallery .line {
-    flex-direction: column;
-  }
-
-  .gallery .row .col {
-    margin-left: 0 !important;
-    height: 140px !important;
-    max-width: 100% !important;
   }
 
   #results .cards .card {
@@ -1147,6 +1108,7 @@ textarea {
   -webkit-filter: grayscale(0%) blur(0);
   filter: grayscale(0%) blur(0);
 }
+
 .grid-item.item-opened {
   position: absolute;
   border: 3px solid #e8e8e8;
@@ -1160,4 +1122,8 @@ textarea {
 #about-us .pupil-card .top img {
   width: 50px;
   height: 50px;
+}
+
+:is(#splide2, #splide5) .flickity-button {
+  display: none !important;
 }

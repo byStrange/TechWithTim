@@ -12,7 +12,7 @@
   <!-- font awesome css -->
   <link rel="stylesheet" href="{% static  'assets/fonts/fontawesome/css/all.min.css' %}" />
   <!-- /font awesome css  -->
-  <link rel="stylesheet" href="{% static 'assets/css/splide.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/css/flickity.css' %}" />
   <!-- main css -->
   <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
   <!-- /main css -->
@@ -269,7 +269,8 @@
             style="color: #fff;text-decoration: none">@EnglishwithTim</a></span>
         <ul style="display: flex" class="licence">
           <li><a href="{% static 'Публичная_оферта.pdf' %}" download="true">Публичная оферта</a></li>
-          <li><a href="{% static 'Форма_заявления_о_возврате_денежный_средств.pdf' %}" download="true">Форма заявления о возврате денежный средств</a></li>
+          <li><a href="{% static 'Форма_заявления_о_возврате_денежный_средств.pdf' %}" download="true">Форма заявления о
+              возврате денежный средств</a></li>
         </ul>
         <!-- /LICENCE -->
       </div>
@@ -278,8 +279,10 @@
   <!-- /footer -->
 
   <!-- main scripts -->
-  <script src="{% static 'assets/js/splide.min.js' %}"></script>
+  <!-- <script src="{% static 'assets/js/splide.min.js' %}"></script> -->
   <script src="{% static 'assets/js/jquery.js' %}"></script>
+  <script src="{% static 'assets/js/flickity.js' %}"></script>
+  
   <!-- inputmask -->
   <script src="{% static 'assets/js/input_mask.js' %}"></script>
   <!-- /inputmask -->
@@ -308,12 +311,10 @@
     // Modal with transition
     if (window.innerWidth > 767) {
       $(window).on('scroll', function (e) {
-        if (window.scrollY > 3600 || window.scrollY < 2150) {
-          $('#teachers .card .name span.fas').each(function () {
-            $(this).parent().parent().children().eq(1).slideUp(200)
-            $(this).removeClass('rotate')
-          })
-        }
+        $('#teachers .card .name span.fas').each(function () {
+          $(this).parent().parent().children().eq(1).slideUp(200)
+          $(this).removeClass('rotate')
+        })
       })
     }
   </script>

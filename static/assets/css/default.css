@@ -147,13 +147,6 @@ img {
   max-width: 500px;
 }
 
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .absolute.img {
   position: absolute;
 }
@@ -204,9 +197,6 @@ section:not(#whywe, #courses, #teachers, #about-us, #faq, #footer) {
   padding-top: 40px;
 }
 
-.splide__pagination {
-  bottom: -25px;
-}
 
 @media screen and (max-width: 776px) {
   span.question {
@@ -214,15 +204,20 @@ section:not(#whywe, #courses, #teachers, #about-us, #faq, #footer) {
   }
 }
 
-.splide__pagination__page.is-active {
-  opacity: 1;
-  background-color: var(--s-main-color);
+.flickity-button {
+  background: var(--s-main-color);
+  opacity: .4;
 }
 
-.splide__arrow {
+.flickity-button:hover {
+  opacity: 1;
   background: var(--s-main-color)
 }
 
-.splide__arrow svg path {
-  fill: var(--s-splide-arrow-color, #fff);
+.flickity-button path {
+  fill: #fff;
+}
+
+.flickity-page-dots li.is-selected{
+  background: var(--s-main-color)
 }

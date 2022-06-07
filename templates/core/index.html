@@ -124,45 +124,46 @@
         <span>Что мы предлагаем</span>
       </div>
     </div>
-    <div class="cards">
+    <div class="cards" style="display: flex;justify-content: space-between;align-items: center;flex-wrap: wrap;">
       <div class="card">
         <div class="icon">
-            <img src="{% static 'assets/media/images/icons/darts.png' %}" alt="darts"  style="margin-left: 5px"/>
+          <img src="{% static 'assets/media/images/icons/darts.png' %}" alt="darts" style="margin-left: 5px" />
         </div>
         <span><span class="marked">Качество</span> - эффективные методы с гарантией
           результата</span>
       </div>
       <div class="card">
         <div class="icon">
-            <img src="{% static 'assets/media/images/icons/mortarboard.png' %}" alt="play-button" style="margin-top: 5px"/>
+          <img src="{% static 'assets/media/images/icons/mortarboard.png' %}" alt="play-button"
+            style="margin-top: 5px" />
         </div>
         <span><span class="marked">Опыт специалистов </span> - преподавание
           английского языка с 2010 года</span>
       </div>
       <div class="card">
         <div class="icon">
-            <img src="{% static 'assets/media/images/icons/competence.svg' %}" alt="mortarboard" />
+          <img src="{% static 'assets/media/images/icons/competence.svg' %}" alt="mortarboard" />
         </div>
         <span><span class="marked">Персональный подход </span> - небольшие классы и
           индивидуальный подход</span>
       </div>
       <div class="card">
         <div class="icon">
-            <img src="{% static 'assets/media/images/icons/quality.svg' %}" alt="learning" />
+          <img src="{% static 'assets/media/images/icons/quality.svg' %}" alt="learning" />
         </div>
         <span><span class="marked">Проверенные услуги </span> - огромное количество
           довольных студентов (в том числе преподавателей)</span>
       </div>
       <div class="card">
         <div class="icon">
-            <img src="{% static 'assets/media/images/icons/learning.png' %}" alt="startup" />
+          <img src="{% static 'assets/media/images/icons/learning.png' %}" alt="startup" />
         </div>
         <span><span class="marked">Устная речь </span> - начните говорить сразу с
           первого урока</span>
       </div>
       <div class="card">
         <div class="icon">
-            <img src="{% static 'assets/media/images/icons/qualification.svg' %}" alt="diagram" />
+          <img src="{% static 'assets/media/images/icons/qualification.svg' %}" alt="diagram" />
         </div>
         <span><span class="marked">Квалификация </span> - все учителя имеют
           сертификаты IELTS/CEFR</span>
@@ -191,35 +192,29 @@
       </div>
     </div>
     <div class="cards splide" id="splide1" style="width: 90%; margin: 0 auto; margin-top: 40px">
-      <div class="splide__track">
-        <ul class="splide__list">
-          {% for course in courses %}
-          <li class="splide__slide">
-            <div class="card">
-              <div class="img top header">
-                <img src="{{ course.image.url }}" alt="course" style="width: 300px; height: 200px" />
-              </div>
-              <div class="content">
-                <div class="_title">
-                  <span>{{ course.course_name }}</span>
-                </div>
-                <div class="more" style="
+      {% for course in courses %}
+      <div class="card">
+        <div class="img top header">
+          <img src="{{ course.image.url }}" alt="course" style="width: 300px; height: 200px" />
+        </div>
+        <div class="content">
+          <div class="_title">
+            <span>{{ course.course_name }}</span>
+          </div>
+          <div class="more" style="
                     display: flex;
                     justify-content: center;
                     margin-top: 20px;
                   ">
-                  <button class="btn default"
-                    onclick="showModal(document.querySelector('.modal-container'),'{{ course.image.url }}',`{{course.course_name}}`, `{{ course.course_details }}`, `{{ course.courseType }}`, `{{course.duration}}`)">
-                    <span>поробнее</span>
-                    <span class="fas fa-angle-right"></span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </li>
-          {% endfor %}
-        </ul>
+            <button class="btn default"
+              onclick="showModal(document.querySelector('.modal-container'),'{{ course.image.url }}',`{{course.course_name}}`, `{{ course.course_details }}`, `{{ course.courseType }}`, `{{course.duration}}`)">
+              <span>поробнее</span>
+              <span class="fas fa-angle-right"></span>
+            </button>
+          </div>
+        </div>
       </div>
+      {% endfor %}
     </div>
     <div style="display: none; margin-top: 50px" class="display" _-scope-_="_gGtUstK_t">
       <a href="#col">
@@ -255,154 +250,135 @@
         </div>
       </div>
       <div class="cards splide" id="splide2">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <div class="card item">
-                <div class="left-side">
-                  <img src="{% static 'assets/media/images/ielts/score-1.jpg' %}" alt="" />
-                </div>
-                <div class="score">
-                  <p class="name">
-                    <span>Yusupov Ulugbek</span>
-                  </p>
-                  <p><span>Listening:</span><span class="marked">8.0</span></p>
-                  <p><span>Reading:</span><span class="marked">8.5</span></p>
-                  <p><span>Writing:</span><span class="marked">7.0</span></p>
-                  <p><span>Speaking:</span><span class="marked">7.5</span></p>
-                  <p class="band-score">
-                    Bandscore:<span class="marked">8.0</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <div class="card item">
-                <div class="left-side">
-                  <img src="{% static 'assets/media/images/ielts/score-2.jpg' %}" alt="" />
-                </div>
-                <div class="score">
-                  <p class="name">
-                    <span>Tulanova Madina</span>
-                  </p>
-                  <p><span>Listening:</span><span class="marked">8.0</span></p>
-                  <p><span>Reading:</span><span class="marked">7.0</span></p>
-                  <p><span>Writing:</span><span class="marked">7.0</span></p>
-                  <p><span>Speaking:</span><span class="marked">7.0</span></p>
-                  <p class="band-score">
-                    Bandscore:<span class="marked">7.5</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <div class="card item">
-                <div class="left-side">
-                  <img src="{% static 'assets/media/images/ielts/score-4.jpg' %}" alt="" />
-                </div>
-                <div class="score">
-                  <p class="name">
-                    <span>Kamolov Durbek</span>
-                  </p>
-                  <p><span>Listening:</span><span class="marked">9.0</span></p>
-                  <p><span>Reading:</span><span class="marked">8.0</span></p>
-                  <p><span>Writing:</span><span class="marked">6.0</span></p>
-                  <p><span>Speaking:</span><span class="marked">8.5</span></p>
-                  <p class="band-score">
-                    Bandscore:<span class="marked">8.0</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <div class="card item">
-                <div class="left-side">
-                  <img src="{% static 'assets/media/images/ielts/score-5.jpg' %}" alt="" />
-                </div>
-                <div class="score">
-                  <p class="name">
-                    <span>Tasbaev Atabek</span>
-                  </p>
-                  <p><span>Listening:</span><span class="marked">8.5</span></p>
-                  <p><span>Reading:</span><span class="marked">7.0</span></p>
-                  <p><span>Writing:</span><span class="marked">6.0</span></p>
-                  <p><span>Speaking:</span><span class="marked">6.0</span></p>
-                  <p class="band-score">
-                    Bandscore:<span class="marked">7.0</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <div class="card item">
-                <div class="left-side">
-                  <img src="{% static 'assets/media/images/ielts/score-6.jpg' %}" />
-                </div>
-                <div class="score">
-                  <p class="name">
-                    <span>Yunusov Shoxruhmirzo</span>
-                  </p>
-                  <p><span>Listening:</span><span class="marked">6.0</span></p>
-                  <p><span>Reading:</span><span class="marked">7.5</span></p>
-                  <p><span>Writing:</span><span class="marked">6.0</span></p>
-                  <p><span>Speaking:</span><span class="marked">6.5</span></p>
-                  <p class="band-score">
-                    Bandscore:<span class="marked">7.0</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <div class="card item">
-                <div class="left-side">
-                  <img src="{% static 'assets/media/images/ielts/score-7.jpg' %}" alt="" />
-                </div>
-                <div class="score">
-                  <p class="name">
-                    <span>Xoliqova Marjonabonu</span>
-                  </p>
-                  <p><span>Listening:</span><span class="marked">8.5</span></p>
-                  <p><span>Reading:</span><span class="marked">7.0</span></p>
-                  <p><span>Writing:</span><span class="marked">6.0</span></p>
-                  <p><span>Speaking:</span><span class="marked">6.5</span></p>
-                  <p class="band-score">
-                    Bandscore:<span class="marked">7.0</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <div class="card item">
-                <div class="left-side">
-                  <img src="{% static 'assets/media/images/ielts/score-8.jpg' %}" alt="" />
-                </div>
-                <div class="score">
-                  <p class="name">
-                    <span>Urinboev Oyatillo</span>
-                  </p>
-                  <p><span>Listening:</span><span class="marked">8.0</span></p>
-                  <p><span>Reading:</span><span class="marked">8.0</span></p>
-                  <p><span>Writing:</span><span class="marked">7.0</span></p>
-                  <p><span>Speaking:</span><span class="marked">8.0</span></p>
-                  <p class="band-score">
-                    Bandscore:<span class="marked">8.0</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
+        <div class="card item">
+          <div class="left-side">
+            <img src="{% static 'assets/media/images/ielts/score-1.jpg' %}" alt="" />
+          </div>
+          <div class="score">
+            <p class="name">
+              <span>Yusupov Ulugbek</span>
+            </p>
+            <p><span>Listening:</span><span class="marked">8.0</span></p>
+            <p><span>Reading:</span><span class="marked">8.5</span></p>
+            <p><span>Writing:</span><span class="marked">7.0</span></p>
+            <p><span>Speaking:</span><span class="marked">7.5</span></p>
+            <p class="band-score">
+              Bandscore:<span class="marked">8.0</span>
+            </p>
+          </div>
+        </div>
+        <div class="card item">
+          <div class="left-side">
+            <img src="{% static 'assets/media/images/ielts/score-2.jpg' %}" alt="" />
+          </div>
+          <div class="score">
+            <p class="name">
+              <span>Tulanova Madina</span>
+            </p>
+            <p><span>Listening:</span><span class="marked">8.0</span></p>
+            <p><span>Reading:</span><span class="marked">7.0</span></p>
+            <p><span>Writing:</span><span class="marked">7.0</span></p>
+            <p><span>Speaking:</span><span class="marked">7.0</span></p>
+            <p class="band-score">
+              Bandscore:<span class="marked">7.5</span>
+            </p>
+          </div>
+        </div>
+        <div class="card item">
+          <div class="left-side">
+            <img src="{% static 'assets/media/images/ielts/score-4.jpg' %}" alt="" />
+          </div>
+          <div class="score">
+            <p class="name">
+              <span>Kamolov Durbek</span>
+            </p>
+            <p><span>Listening:</span><span class="marked">9.0</span></p>
+            <p><span>Reading:</span><span class="marked">8.0</span></p>
+            <p><span>Writing:</span><span class="marked">6.0</span></p>
+            <p><span>Speaking:</span><span class="marked">8.5</span></p>
+            <p class="band-score">
+              Bandscore:<span class="marked">8.0</span>
+            </p>
+          </div>
+        </div>
+        <div class="card item">
+          <div class="left-side">
+            <img src="{% static 'assets/media/images/ielts/score-5.jpg' %}" alt="" />
+          </div>
+          <div class="score">
+            <p class="name">
+              <span>Tasbaev Atabek</span>
+            </p>
+            <p><span>Listening:</span><span class="marked">8.5</span></p>
+            <p><span>Reading:</span><span class="marked">7.0</span></p>
+            <p><span>Writing:</span><span class="marked">6.0</span></p>
+            <p><span>Speaking:</span><span class="marked">6.0</span></p>
+            <p class="band-score">
+              Bandscore:<span class="marked">7.0</span>
+            </p>
+          </div>
+        </div>
+        <div class="card item">
+          <div class="left-side">
+            <img src="{% static 'assets/media/images/ielts/score-6.jpg' %}" />
+          </div>
+          <div class="score">
+            <p class="name">
+              <span>Yunusov Shoxruhmirzo</span>
+            </p>
+            <p><span>Listening:</span><span class="marked">6.0</span></p>
+            <p><span>Reading:</span><span class="marked">7.5</span></p>
+            <p><span>Writing:</span><span class="marked">6.0</span></p>
+            <p><span>Speaking:</span><span class="marked">6.5</span></p>
+            <p class="band-score">
+              Bandscore:<span class="marked">7.0</span>
+            </p>
+          </div>
+        </div>
+        <div class="card item">
+          <div class="left-side">
+            <img src="{% static 'assets/media/images/ielts/score-7.jpg' %}" alt="" />
+          </div>
+          <div class="score">
+            <p class="name">
+              <span>Xoliqova Marjonabonu</span>
+            </p>
+            <p><span>Listening:</span><span class="marked">8.5</span></p>
+            <p><span>Reading:</span><span class="marked">7.0</span></p>
+            <p><span>Writing:</span><span class="marked">6.0</span></p>
+            <p><span>Speaking:</span><span class="marked">6.5</span></p>
+            <p class="band-score">
+              Bandscore:<span class="marked">7.0</span>
+            </p>
+          </div>
+        </div>
+        <div class="card item">
+          <div class="left-side">
+            <img src="{% static 'assets/media/images/ielts/score-8.jpg' %}" alt="" />
+          </div>
+          <div class="score">
+            <p class="name">
+              <span>Urinboev Oyatillo</span>
+            </p>
+            <p><span>Listening:</span><span class="marked">8.0</span></p>
+            <p><span>Reading:</span><span class="marked">8.0</span></p>
+            <p><span>Writing:</span><span class="marked">7.0</span></p>
+            <p><span>Speaking:</span><span class="marked">8.0</span></p>
+            <p class="band-score">
+              Bandscore:<span class="marked">8.0</span>
+            </p>
+          </div>
         </div>
       </div>
+      <div style="display: none; margin-top: 50px" class="display" _-scope-_="_gGtUstK_t">
+        <a href="#col">
+          <button class="btn default">
+            <span>Хочу также</span>
+            <span class="fas fa-angle-right"></span>
+          </button>
+        </a>
+      </div>
     </div>
-    <div style="display: none; margin-top: 50px" class="display" _-scope-_="_gGtUstK_t">
-      <a href="#col">
-        <button class="btn default">
-          <span>Хочу также</span>
-          <span class="fas fa-angle-right"></span>
-        </button>
-      </a>
-    </div>
-  </div>
 </section>
 
 <section id="teachers">
@@ -426,26 +402,20 @@
       </div>
     </div>
     <div light style="width: 75%" class="cards splide" id="splide3" _-scope-_="EUyoeoYPij">
-      <div class="splide__track">
-        <ul class="splide__list">
-          {% for teacher in teachers%}
-          <li class="splide__slide">
-            <div class="card">
-              <div class="img">
-                <img src="{{ teacher.image.url }}" alt="" />
-              </div>
-              <div class="content">
-                <p class="name">
-                  <span>{{ teacher.teacher_name }}</span>
-                  <span class="fas fa-caret-down"></span>
-                </p>
-                <p class="_hidden">{{ teacher.about }}</p>
-              </div>
-            </div>
-          </li>
-          {% endfor %}
-        </ul>
+      {% for teacher in teachers%}
+      <div class="card">
+        <div class="img">
+          <img src="{{ teacher.image.url }}" alt="" />
+        </div>
+        <div class="content">
+          <p class="name">
+            <span>{{ teacher.teacher_name }}</span>
+            <span class="fas fa-caret-down"></span>
+          </p>
+          <p class="_hidden">{{ teacher.about }}</p>
+        </div>
       </div>
+      {% endfor %}
     </div>
     <div style="display: none; margin-top: 50px" class="display" _-scope-_="_gGtUstK_t">
       <a href="#col">
@@ -479,132 +449,122 @@
       </div>
     </div>
     <div class="pupils splide" id="splide4" style="margin-top: 100px">
-      <div class="splide__track">
-        <ul class="splide__list">
-          <div class="pupil-card splide__slide">
-            <div class="top">
-              <div class="img">
-                <img
-                    src="{% static 'assets/media/images/students/student-3.jpg' %}" alt="" />
-              </div>
-              <div>
-                <p>Humoyun</p>
-                <span class="marked">Student</span>
-              </div>
-            </div>
-            <div>
-              <p>
-                Во-первых, Ассаляму алейкум! Спасибо всем преданным сотрудникам
-                English with Tim! Не хватает словесной похвалы для описания
-                учебного центра и вашего персонала. Вот почему мы, студенты,
-                должны продемонстрировать свой потенциал на практике
-                результатами. Спасибо вам всем!
-              </p>
-            </div>
+      <div class="pupil-card splide__slide">
+        <div class="top">
+          <div class="img">
+            <img src="{% static 'assets/media/images/students/student-3.jpg' %}" alt="" />
           </div>
-          <div class="pupil-card splide__slide">
-            <div class="top">
-              <div class="img">
-                <img
-                    src="{% static 'assets/media/images/students/student-1.jpg' %}" alt="" />
-                
-              </div>
-              <div>
-                <p>Abror</p>
-                <span class="marked">Student</span>
-              </div>
-            </div>
-            <div>
-              <p>
-                Знаете, English with Tim меня научил многому, почти 2 года я
-                обучаюсь здесь. Я начала с Beginner’а, но сейчас у меня
-                Foudation. Я хочу поблагодарить Toby и JK за их труды. Все
-                учителя энергичные и всегда есть взаимопонимание между учителем
-                и учеником. Да, мне очень повезло, что я учусь в этом центре.
-              </p>
-            </div>
+          <div>
+            <p>Humoyun</p>
+            <span class="marked">Student</span>
           </div>
-          <div class="pupil-card splide__slide">
-            <div class="top">
-              <div class="img">
-                <img
-                    src="{% static 'assets/media/images/students/student-4.jpg' %}" alt="" />
-              </div>
-              <div>
-                <p>Davud</p>
-                <span class="marked">Student</span>
-              </div>
-            </div>
-            <div>
-              <p>
-                Я полностью доволен. Мой разговорный Английский намного
-                улучшился и я бы определенно рекомендовал курсы в Tim Я считаю,
-                что этот центр и учителя одни из самых лучших. Все объясняется
-                понятным образом и атмосфера тоже очень крутая. Мне очень
-                понравился последний курс и я надеюсь, что последующие будут
-                также увлекательны и полезны.
-              </p>
-            </div>
+        </div>
+        <div>
+          <p>
+            Во-первых, Ассаляму алейкум! Спасибо всем преданным сотрудникам
+            English with Tim! Не хватает словесной похвалы для описания
+            учебного центра и вашего персонала. Вот почему мы, студенты,
+            должны продемонстрировать свой потенциал на практике
+            результатами. Спасибо вам всем!
+          </p>
+        </div>
+      </div>
+      <div class="pupil-card splide__slide">
+        <div class="top">
+          <div class="img">
+            <img src="{% static 'assets/media/images/students/student-1.jpg' %}" alt="" />
+
           </div>
-          <div class="pupil-card splide__slide">
-            <div class="top">
-              <div class="img">
-                <img
-                    src="{% static 'assets/media/images/students/student-5.jpg' %}" alt="" />
-              </div>
-              <div>
-                <p>Bekmuhammad</p>
-                <span class="marked">Student</span>
-              </div>
-            </div>
-            <div>
-              <p>
-                Я думаю, что их методы эффективны и мне нравится то, как учителя
-                увлеченно помогают студентам. Все очень отзывчивые и уроки очень
-                полезны.
-              </p>
-            </div>
+          <div>
+            <p>Abror</p>
+            <span class="marked">Student</span>
           </div>
-          <div class="pupil-card splide__slide">
-            <div class="top">
-              <div class="img">
-                <img
-                    src="{% static 'assets/media/images/students/student-2.jpg' %}" alt="" />
-              </div>
-              <div>
-                <p>Хуршида</p>
-                <span class="marked">Student</span>
-              </div>
-            </div>
-            <div>
-              <p>
-                Я хотел бы учиться здесь заново и я обязательно буду :) Все мои
-                одногруппники очень дружелюбны, атмосфера в заведении приятная.
-                Маленькие группы помогают лучше прогрессировать и я смело всем
-                рекомендую это место.
-              </p>
-            </div>
+        </div>
+        <div>
+          <p>
+            Знаете, English with Tim меня научил многому, почти 2 года я
+            обучаюсь здесь. Я начала с Beginner’а, но сейчас у меня
+            Foudation. Я хочу поблагодарить Toby и JK за их труды. Все
+            учителя энергичные и всегда есть взаимопонимание между учителем
+            и учеником. Да, мне очень повезло, что я учусь в этом центре.
+          </p>
+        </div>
+      </div>
+      <div class="pupil-card splide__slide">
+        <div class="top">
+          <div class="img">
+            <img src="{% static 'assets/media/images/students/student-4.jpg' %}" alt="" />
           </div>
-          <div class="pupil-card splide__slide">
-            <div class="top">
-              <div class="img">
-                <img
-                    src="{% static 'assets/media/images/students/student-6.jpg' %}" alt="" /></a>
-              </div>
-              <div>
-                <p>Abdulboriy</p>
-                <span class="marked">Student</span>
-              </div>
-            </div>
-            <div>
-              <p>
-                Маленькие группы, цена приемлемая, а самое главное все учителя
-                любят то, что делают: они подходят к работе с душой и заботятся
-                о нуждах студентов.
-              </p>
-            </div>
+          <div>
+            <p>Davud</p>
+            <span class="marked">Student</span>
           </div>
-        </ul>
+        </div>
+        <div>
+          <p>
+            Я полностью доволен. Мой разговорный Английский намного
+            улучшился и я бы определенно рекомендовал курсы в Tim Я считаю,
+            что этот центр и учителя одни из самых лучших. Все объясняется
+            понятным образом и атмосфера тоже очень крутая. Мне очень
+            понравился последний курс и я надеюсь, что последующие будут
+            также увлекательны и полезны.
+          </p>
+        </div>
+      </div>
+      <div class="pupil-card splide__slide">
+        <div class="top">
+          <div class="img">
+            <img src="{% static 'assets/media/images/students/student-5.jpg' %}" alt="" />
+          </div>
+          <div>
+            <p>Bekmuhammad</p>
+            <span class="marked">Student</span>
+          </div>
+        </div>
+        <div>
+          <p>
+            Я думаю, что их методы эффективны и мне нравится то, как учителя
+            увлеченно помогают студентам. Все очень отзывчивые и уроки очень
+            полезны.
+          </p>
+        </div>
+      </div>
+      <div class="pupil-card splide__slide">
+        <div class="top">
+          <div class="img">
+            <img src="{% static 'assets/media/images/students/student-2.jpg' %}" alt="" />
+          </div>
+          <div>
+            <p>Хуршида</p>
+            <span class="marked">Student</span>
+          </div>
+        </div>
+        <div>
+          <p>
+            Я хотел бы учиться здесь заново и я обязательно буду :) Все мои
+            одногруппники очень дружелюбны, атмосфера в заведении приятная.
+            Маленькие группы помогают лучше прогрессировать и я смело всем
+            рекомендую это место.
+          </p>
+        </div>
+      </div>
+      <div class="pupil-card splide__slide">
+        <div class="top">
+          <div class="img">
+            <img src="{% static 'assets/media/images/students/student-6.jpg' %}" alt="" /></a>
+          </div>
+          <div>
+            <p>Abdulboriy</p>
+            <span class="marked">Student</span>
+          </div>
+        </div>
+        <div>
+          <p>
+            Маленькие группы, цена приемлемая, а самое главное все учителя
+            любят то, что делают: они подходят к работе с душой и заботятся
+            о нуждах студентов.
+          </p>
+        </div>
       </div>
     </div>
     <div style="display: none; margin-top: 50px" class="display" _-scope-_="_gGtUstK_t">
@@ -688,13 +648,9 @@
     </div>
   </div>
   <div class="splide " id="splide5">
-    <div class="splide__track">
-      <ul class="splide__list">
-        {% for photo in photos %}
-        <div class="splide__slide grid-item" style="background-image: url('{{ photo.photo.url }}')"></div>
-        {% endfor %}
-      </ul>
-    </div>
+    {% for photo in photos %}
+    <div class="splide__slide grid-item" style="background-image: url('{{ photo.photo.url }}')"></div>
+    {% endfor %}
   </div>
   <div style="display: none; margin-top: 50px" _-scope-_="D_4sWC_VVW">
     <a href="#col">
