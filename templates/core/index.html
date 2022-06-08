@@ -403,6 +403,7 @@
     </div>
     <div light style="width: 75%" class="cards splide" id="splide3" _-scope-_="EUyoeoYPij">
       {% for teacher in teachers%}
+      <div >
       <div class="card">
         <div class="img">
           <img src="{{ teacher.image.url }}" alt="" />
@@ -415,6 +416,7 @@
           <p class="_hidden">{{ teacher.about }}</p>
         </div>
       </div>
+    </div>
       {% endfor %}
     </div>
     <div style="display: none; margin-top: 50px" class="display" _-scope-_="_gGtUstK_t">
@@ -649,7 +651,9 @@
   </div>
   <div class="splide " id="splide5">
     {% for photo in photos %}
+    <div>
     <div class="splide__slide grid-item" style="background-image: url('{{ photo.photo.url }}')"></div>
+    </div>
     {% endfor %}
   </div>
   <div style="display: none; margin-top: 50px" _-scope-_="D_4sWC_VVW">

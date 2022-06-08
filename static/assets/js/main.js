@@ -19,9 +19,19 @@
 $(function () {
   $(document).ready(function () {
     $('#teachers ._hidden').slideUp(1)
+    $("#teachers .flickity-viewport").addClass("closed");
     $('#teachers .card .name span.fas').click(function () {
-      $(this).parent().parent().children().eq(1).slideToggle(200)
-      $(this).toggleClass('rotate')
+      if ($(this).hasClass('rotate')) {
+        $(this).parent().parent().children().eq(1).slideUp(200)
+        $("#teachers .flickity-viewport").addClass("closed");
+        $(this).removeClass('rotate')
+      } else {
+        $('#teachers .card .name span.fas').removeClass('rotate')
+        $("#teachers ._hidden").slideUp(500);
+        console.log("else")
+        $(this).parent().parent().children().eq(1).slideDown(200)
+        $("#teachers .flickity-viewport").removeClass("closed");
+      }
     })
     $('#faq .hidden').slideUp();
     $('#faq .collapse[button]').click(function (e) {
@@ -108,8 +118,6 @@ $("#splide2").flickity({
 $("#splide3").flickity({
   pageDots: innerWidth < 768 ? true : false,
   autoPlay: true,
-  adaptiveHeight: true,
-
 })
 
 $("#splide4").flickity({

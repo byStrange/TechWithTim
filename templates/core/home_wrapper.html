@@ -308,15 +308,6 @@
     }
     checkSize()
     $(window).on('resize', checkSize)
-    // Modal with transition
-    if (window.innerWidth > 767) {
-      $(window).on('scroll', function (e) {
-        $('#teachers .card .name span.fas').each(function () {
-          $(this).parent().parent().children().eq(1).slideUp(200)
-          $(this).removeClass('rotate')
-        })
-      })
-    }
   </script>
   <!-- /main scripts -->
   <div class="modal-alert">
