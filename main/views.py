@@ -1,8 +1,19 @@
 from django.shortcuts import render, redirect
+import json
+from django.http import JsonResponse
 from .models import *
 from .forms import ContactForm
 
-
+def contact_view(request):
+  d = request.GET.get('data')
+  data = json.loads(d)
+  # js degi valuelariz keladi shuni ozgaruvchiga tenglab olin
+  example = data['example']
+  contact = Contact.objects.create(example=example) # your values
+  if contact:
+    return JsonResponse({'message': 200})
+  # else yozish shartmas agar unday bolmasa ozi kegingisiga otib ketadi
+  return JsonResponse({'message': 400})
 def home(request):
     course = Course.objects.all()
     teacher = Teacher.objects.all()

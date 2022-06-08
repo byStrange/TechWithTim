@@ -132,3 +132,44 @@ $("#splide5").flickity({
   arrows: false,
   wrapAround: true,
 })
+
+
+var submit_button = document.querySelector('#submit_button');
+submit_button.addEventListener('click', function (e) {
+  e.preventDefault();
+  console.log('clicked')
+  SendContact();
+})
+
+function SendContact() {
+  let d = {
+      name: $('#id_name').val(),
+      surname: $('#id_surname').val(),
+      phone: $('#id_phone').val(),
+      phone2: $('#id_phone1').val(),
+      message: $('#id_message').val(),
+  }
+  let data = JSON.stringify(d)
+  if (window.XMLHttpRequest) {
+      var xhttp = new XMLHttpRequest();
+  } else { // code for IE6, IE5
+      var xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xhttp.onreadystatechange = function() {
+      if (xhttp.readyState === 4 && xhttp.status === 200) {
+          var data = JSON.parse(this.responseText);
+          let data_value = data['message']
+          if (data_value == 200) {
+              alert('Successfully sent')
+          }
+          else {
+            alert('Error')
+          }
+      } else {
+          console.log('Not yet')
+      }
+  }
+  var url = "/contact/add/" // # aynan shu yerga etibor berin !, urlda pathga yozadigoniz qoyiladi bunga
+  xhttp.open("GET", url + `?data=${data}`, true);
+  xhttp.send();
+}

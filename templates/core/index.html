@@ -758,7 +758,7 @@
               value="W5ax5qSzqPSujH2uuZZKmyej2DdqA0a7VNUdZJ2USBOzXanP0Rbo4WXcSfhhjPX3" />
             {% csrf_token %}
             <div>
-              <input type=" text" name="name" maxlength="255" required="" id="id_name" placeholder="Ваше имя" />
+              <input type="text" name="name" maxlength="255" required="" id="id_name" placeholder="Ваше имя" />
               <input type="text" name="surname" maxlength="255" required="" id="id_surname" placeholder="Фамилия" />
             </div>
             <div>
@@ -768,7 +768,7 @@
             </div>
             <textarea name="message" cols="40" rows="6" required="" id="id_message" placeholder="Текст"></textarea>
             <div style="margin-top: 70px">
-              <button type="submit" style="display: flex; margin: 0px auto" class="btn default">
+              <button type="submit" style="display: flex; margin: 0px auto" class="btn default" id="submit_button">
                 <span>Отправить сообщениe</span>
                 <span class="fas fa-angle-right"></span>
               </button>
