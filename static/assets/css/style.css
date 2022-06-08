@@ -435,6 +435,7 @@ img {
 
 #teachers .cards .card ._hidden {
   margin-top: 10px;
+  word-wrap: break-word;
 }
 
 #teachers .card {
@@ -1106,8 +1107,6 @@ textarea {
   width: 400px;
   height: 300px;
   float: left;
-  background-color: #f4f3f4;
-  border: 5px solid #fff;
   -webkit-filter: grayscale(70%) blur(0.5px);
   -webkit-transform: translateZ(0);
   filter: grayscale(70%) blur(0.5px);

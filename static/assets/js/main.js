@@ -107,7 +107,9 @@ $("#splide2").flickity({
 
 $("#splide3").flickity({
   pageDots: innerWidth < 768 ? true : false,
-  autoPlay: true
+  autoPlay: true,
+  adaptiveHeight: true,
+
 })
 
 $("#splide4").flickity({
