@@ -1151,7 +1151,7 @@ textarea {
   background: var(--s-main-color);
 }
 
-.modal-alert {
+/* .modal-alert {
   position: fixed;
   top: 0;
   left: 0;
@@ -1174,4 +1174,4 @@ textarea {
   background: linear-gradient(to right, #00e6414c, #00c8533d);
   color: #fff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
+} */

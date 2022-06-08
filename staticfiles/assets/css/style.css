@@ -192,7 +192,7 @@ main .messages .message p {
   cursor: default;
 }
 
-.cards .card>span {
+.cards .card > span {
   display: inline-block;
   max-width: 400px;
   font-size: 30px;
@@ -395,7 +395,7 @@ img {
   color: #fff !important;
 }
 
-#teachers>.container {
+#teachers > .container {
   display: flex;
   align-items: center;
 }
@@ -483,8 +483,6 @@ img {
   height: auto;
   margin-right: 10px;
 }
-
-
 
 #about-us .pupil-card .top {
   display: flex;
@@ -576,7 +574,7 @@ img {
   border-radius: 0px 0px 5px 0px;
 }
 
-#faq li>div {
+#faq li > div {
   display: flex;
   justify-content: space-between;
 }
@@ -647,7 +645,7 @@ img {
   width: 100%;
 }
 
-#contact .absolute.img>div {
+#contact .absolute.img > div {
   width: 70px;
   height: 70px;
   background: var(--s-offer-content-background);
@@ -676,7 +674,7 @@ img {
   content: "\f0e0" !important;
 }
 
-#contact form>div {
+#contact form > div {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -783,7 +781,6 @@ textarea {
 :is(#footer, #contact) .icon:not(:first-child) {
   margin-left: 10px;
 }
-
 
 @media screen and (max-width: 2000px) {
   .message[d] {
@@ -920,7 +917,12 @@ textarea {
 }
 
 @media screen and (max-width: 768px) {
-
+  #splide2 .flickity-enabled.is-draggable .flickity-viewport {
+    height: 270px !important;
+  }
+  .sm-light {
+    color: var(--s-main-color) !important;
+  }
   .flickity-button {
     display: none !important;
   }
@@ -974,7 +976,7 @@ textarea {
     margin-bottom: 0 !important;
   }
 
-  main>.container::after {
+  main > .container::after {
     top: 0 !important;
   }
 
@@ -982,17 +984,17 @@ textarea {
     left: 0px !important;
   }
 
-  #contact form>div {
+  #contact form > div {
     flex-direction: column;
     margin-bottom: 0 !important;
   }
 
-  #contact form>div input {
+  #contact form > div input {
     width: 100%;
     margin-bottom: 7px;
   }
 
-  .cards .card>span {
+  .cards .card > span {
     max-width: 250px;
   }
 
@@ -1026,11 +1028,20 @@ textarea {
     font-size: 30px !important;
   }
 
-  .container .title>span {
+  #contact .title.right {
+    text-align: right;
+  }
+
+  #contact .absolute.img {
+    top: -30px !important;
+    left: -15px !important;
+  }
+
+  .container .title > span {
     width: 100% !important;
   }
 
-  .cards .card>span {
+  .cards .card > span {
     font-size: 20px;
   }
 
@@ -1052,6 +1063,10 @@ textarea {
 }
 
 @media screen and (max-width: 360px) {
+  #whywe .cards .card {
+    flex-direction: column;
+    text-align: center;
+  }
   #results .cards .card img {
     width: 200px !important;
     margin: 0 auto;
@@ -1127,3 +1142,36 @@ textarea {
 :is(#splide2, #splide5) .flickity-button {
   display: none !important;
 }
+
+#splide3 .flickity-page-dots .dot {
+  background: #fff;
+}
+
+#splide3 .flickity-page-dots .dot.is-selected {
+  background: var(--s-main-color);
+}
+
+/* .modal-alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  display: none;
+
+}
+
+.modal-alert  .alert-box {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 15px;
+  padding: 20px;
+  background: linear-gradient(to right, #00e6414c, #00c8533d);
+  color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+} */

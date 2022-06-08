@@ -94,163 +94,31 @@ function showModal(self, img, title, content, type, dur) {
     }
   })
 })()
+
 $('img').each(() => {
   $(this).attr('draggable', false)
 })
 
 $("#splide2").flickity({
   arrows: false,
-  autoPlay: true
+  autoPlay: true,
+  wrapAround: true,
 })
 
 $("#splide3").flickity({
-  pageDots: false,
+  pageDots: innerWidth < 768 ? true : false,
   autoPlay: true
 })
+
 $("#splide4").flickity({
-  autoPlay: true
+  autoPlay: true,
+  wrapAround: true,
 })
+
 $("#splide1").flickity()
+
 $("#splide5").flickity({
   autoPlay: true,
-  arrows: false
+  arrows: false,
+  wrapAround: true,
 })
-// var len1 = $('#splide4 .cards .card').length;
-// var len2 = $('#splide3 .cards .card').length;
-// var len3 = $('#splide2 .cards .card').length;
-// var len4 = $('#splide1 .cards .card').length;
-// // Splides
-// var splide = new Splide('#splide4', {
-//   type: 'loop',
-//   padding: '5rem',
-//   perPage: 2,
-//   focus: 'center',
-//   gap: '20px',
-//   autoplay: true,
-//   arrows: true,
-//   perMove: 1,
-//   breakpoints: {
-//     767: {
-//       perPage: 1,
-//       padding: 0,
-//       gap: 0,
-//       autoWidth: false
-//     },
-//     1950: {
-//       perPage: len1 <= 3 ? len1 : 4,
-//       autoWidth: true
-//     },
-//     1500: {
-//       perPage: 2,
-//       autoWidth: true
-//     },
-//   }
-// });
-// splide.mount();
-
-
-// var splide2 = new Splide('#splide3', {
-//   padding: '5rem',
-//   gap: '15px',
-//   perMove: 1,
-//   perPage: 1,
-//   arrows: true,
-//   autoplay: true,
-//   breakpoints: {
-//     767: {
-//       perPage: 1,
-//       padding: 0,
-//       gap: 0,
-//       autoWidth: false
-//     },
-//     1950: {
-//       perPage: len2 <= 3 ? len2 : 4,
-//     },
-//     1200: {
-//       perPage: 1
-//     },
-//     1500: {
-//       perPage: 2
-//     },
-
-//   }
-// });
-// splide2.mount()
-
-// var splide3 = new Splide('#splide2', {
-//   padding: '5rem',
-//   gap: '15px',
-//   arrows: false,
-//   autoplay: true,
-//   breakpoints: {
-//     767: {
-//       perPage: 1,
-//       padding: 0,
-//       autoWidth: true
-//     },
-//     1950: {
-//       perPage: len3 <= 3 ? len3 : 4,
-//       focus: 'center'
-//     },
-//     1700: {
-//       perPage: 2,
-//     },
-//     1200: {
-//       perPage: 1,
-//     },
-//   }
-// });
-// splide3.mount()
-// var splide5 = new Splide("#splide5", {
-//   type:  innerWidth < 768 ? 'slide' : 'loop',
-//   padding: '5rem',
-//   perPage: 2,
-//   focus: 'center',
-//   gap: '20px',
-//   autoplay: true,
-//   arrows: false,
-//   perMove: 1,
-//   breakpoints: {
-//     767: {
-//       perPage: 1,
-//       padding: 0,
-//       gap: 0,
-//       autoWidth: false
-//     },
-//     1950: {
-//       perPage: len1 <= 3 ? len1 : 4,
-//       autoWidth: true
-//     },
-//     1500: {
-//       perPage: 2,
-//       autoWidth: true
-//     },
-//   }
-// }).mount()
-// var splide1 = new Splide('#splide1', {
-//   perMove: 1,
-//   padding: '5rem',
-//   gap: '25px',
-//   perPage: 1,
-//   autoWidth: true,
-//   arrows: false,
-//   autoplay: true,
-//   breakpoints: {
-//     767: {
-//       perPage: 1,
-//       gap: 0,
-//       padding: 0,
-//       autoWidth: false,
-//     },
-//     1950: {
-//       perPage: len4 <= 3 ? len4 : 4,
-//       autoWidth: true
-//     },
-//     1500: {
-//       perPage: 1,
-//       autoWidth: true
-//     },
-
-//   }
-// });
-// splide1.mount()
